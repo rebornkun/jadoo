@@ -1,0 +1,215 @@
+.background_arc{
+    position: absolute;
+    right: 0;
+    top: -15%;
+    z-index: -1;
+}
+
+.home .contents{
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.texts_and_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.texts_and_buttons h1{
+    position: relative;
+}
+.texts_and_buttons .line{
+    position: absolute;
+    top: 65px;
+    z-index: -1;
+    left: 230px;
+}
+.home_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.find_out_more_btn{
+    height: 50px;
+    width: 145px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* padding: 1rem 1.5rem; */
+    border-radius: 10px;
+    background-color: var(--yellow);
+    transition: all 0.3s ease;
+}
+.find_out_more_btn:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.find_out_more_btn p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.play_btn{
+    height: 50px;
+    width: 50px;
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 1rem;
+    box-shadow: 0px 0px 20px var(--orange);
+    transition: all 0.3s ease;
+}
+.play_btn:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.play_demo{
+    color: #686D77;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.hero_image{
+    position: relative;
+}
+.hero_image img{
+    height: 600px;
+    width: 600px;
+}
+.hero_image .hero{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hero_image .hero:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.hero_image img.round_plane{
+    cursor: pointer;
+}
+.hero_image img.round_plane:hover{
+    transform: scale(1.2);
+}
+.hero_image img.round_plane.front{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+    animation: moveround 7s linear 0s infinite, fade 7s linear 0s infinite;
+}
+.hero_image img.round_plane.move{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+    animation: move 5s linear 0s infinite;
+}
+.hero_image img.round_plane.move.sec{
+    animation: move 5s linear 2.5s infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(500px, -250px);
+    }
+}
+@keyframes moveround {
+    0%{
+        transform: translate(0px, 0px) rotateY(0deg) rotate(0deg);
+    }
+    20%{
+        transform: translate(500px, -250px);
+    }
+    60%{
+        transform: translate(500px, -250px) rotateY(180deg) rotate(60deg);
+    }
+    80%{
+        transform: translate(0px, 0px) rotateY(180deg) rotate(60deg);
+    }
+    100%{
+        transform: translate(0px, 0px) rotateY(0deg) rotate(0deg);
+    }
+}
+@keyframes fade {
+    0%{
+        z-index: -1;
+    }
+    100%{
+        z-index: 1;
+    }
+}
+
+
+.title_and_cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title_and_cards h2{
+    text-align: center;
+}
+
+.cards_containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.card{
+    flex: 1 1 25%;
+    min-width: 250px;
+    height: 300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}    
+.card:hover{
+    box-shadow: 0px 0px 30px -20px #000;
+    transition: all 0.3s ease;
+}    
+.card.shadow{
+    box-shadow: 0px 0px 30px -20px #000;
+}    
+.card img{
+    height: 80px;
+    width: 100%;
+}    
+
+.cards_containers_decor{
+    position: absolute;
+    bottom: -40px;
+    left: 255px;
+    z-index: -1;
+}

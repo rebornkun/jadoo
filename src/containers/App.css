@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@400;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Volkhov', serif; */
+
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --orange: #DF6951;
+  --dark-blue: #181E4B;
+  --darker-blue: #14183E;
+  --yellow: #F1A501;
+  --dark: #212832;
+  --light-blue: #5E6282;
+}
+
+body{
+  /* background-color: #171717; */
+  overflow-y: overlay;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+border-radius: 10px;
+/* background-color: transparent;
+scrollbar-color: transparent; */
+}
+body::-webkit-scrollbar-thumb {
+border-radius: 7px;
+background: var(--brown);
+}
+
+/* general styles */
+.container {
+  height: 100%;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 160px;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+
+.active h5{
+  /* color: var(--pri) !important; */
+  transition: all 0.1s ease;
+  text-decoration: none;
+}
+
+.section{
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+.mini_section{
+  width: 100vw;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+h5{
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 600; 
+  font-family: 'Poppins', sans-serif;
+  line-height: 25px;
+}
+
+h4{
+  color: var(--orange);
+  font-size: 1.3rem;
+  font-weight: 600; 
+  font-family: 'Poppins', sans-serif;
+  line-height: 25px;
+}
+h3{
+  color: var(--darker-blue);
+  font-size: 1rem;
+  font-weight: 400; 
+  /* line-height: 90px; */
+}
+h2{
+  color: var(--darker-blue);
+  font-size: 2.75rem;
+  font-weight: 600; 
+  font-family: 'Volkhov', serif;
+  /* line-height: 90px; */
+}
+h1{
+  color: var(--dark-blue);
+  font-size: 4.5rem;
+  font-weight: 700; 
+  font-family: 'Volkhov', serif;
+  /* line-height: 90px; */
+}
+p{
+  color: var(--light-blue);
+  font-size: 0.9rem;
+  font-weight: 400; 
+  /* line-height: 90px; */
+}

@@ -1,0 +1,84 @@
+.navbar{
+    width: 100%;
+    margin: auto;
+    background: var(--white);
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.navbar .container{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo h1{
+    color: var(--dark);
+    font-size: 2.5rem;
+    font-weight: 600; 
+}
+
+.nav_buttons_and_search_button{
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+    align-items: center;
+}
+.nav_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.nav_buttons h5{
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    z-index: 2;
+    color: var(--dark);
+}
+.nav_item:hover h5{
+    transition: all 0.2s ease;
+    color: var(--orange);
+    transform: scale(1.03);
+}
+.nav_item{
+    position: relative;
+    cursor: pointer;
+}
+.nav_item img{
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.nav_item:hover img{
+    top: -20px;
+    left: 80%;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.nav_item h5.border{
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
